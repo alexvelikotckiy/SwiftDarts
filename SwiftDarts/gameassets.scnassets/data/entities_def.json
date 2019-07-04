@@ -1,0 +1,56 @@
+{
+    "entityDefs":{
+        "base":{
+        },
+        "basePhysics":{
+            "inherit": "base",
+            "smoothPhysics": false,
+            "density":8.0,
+        },
+        "projectiles_dart":{
+            "inherit": "base",
+            "smoothPhysics": false,
+            "audio":{
+                "presetName": "dart",
+                "minimumImpulse": 0.2,
+                "maximumImpulse": 25.0,
+                "velocityMinimum": 40,
+                "velocityMaximum": 127,
+                "collision": true,
+                "pooled": true,
+                "poolCount": 4
+            },
+        },
+        // a light above the table
+        "GameLight":{
+            "properties": {
+                "shadowMapSize": "512 1024",
+                "angles": "-75.0 0.0 -20.0", // off-vertical
+                "shadowMode": 1
+            }
+        },
+        // a camera representing a view of the scene
+        "GameCamera":{
+            "properties": {
+                "hdr": false, // defaults to on in SceneKit for WideGamut devices - ignoring this
+                "motionBlur": 0.0,
+                "ambientOcclusion": 0.0
+            }
+        },
+
+        "CameraThrower":{
+            "properties": {
+                "minStretchTime": 0.3,
+                "maxStretchTime": 1.5,
+                "minVelocity": 40.0,
+                "maxVelocity": 60.0,
+                "cooldownTime": 0.5,
+            },
+        },
+        "resetSwitch":{
+            "inherit": "base",
+            "category":{"enabled":true,"header":"reset"},
+            "resetSwitch":true
+        }
+    }
+}

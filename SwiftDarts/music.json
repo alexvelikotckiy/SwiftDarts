@@ -1,0 +1,8 @@
+
+{
+    "music_win": {
+        "filename": "Sounds/music_win.m4a",
+        "volumeDB": -16.0,
+        "loops": false
+    },
+}
