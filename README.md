@@ -48,7 +48,7 @@ Pull requests should include information about what has been changed. Also, try 
 
 ## License ##
 
-Taskem is available under the [MIT license][license-url]. 
+SwiftDarts is available under the [MIT license][license-url]. 
 
 [license-url]: LICENSE
 [swift-url]: https://swift.org/
